@@ -1,0 +1,2233 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+/*======================================== header ================================= */
+.display {
+  display: none;
+}
+
+.fluid {
+  margin: 20px;
+}
+
+.head {
+  position: relative;
+  bottom: 33px;
+}
+.phone a {
+  text-decoration: none;
+  color: #9c9494;
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.phone {
+  color: #9c9494;
+  font-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  left: 25px;
+  top: 14px;
+}
+.follow a {
+  float: right;
+  text-decoration: none;
+  color: #9c9494;
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.follow i {
+  margin: 5px;
+  color: #9c9494;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+  float: right;
+  position: relative;
+  right: 15px;
+}
+
+/* ============================== header ================================*/
+
+/* ==============================  navbar ================================*/
+.navbar {
+  transition: transform 0.6s ease, top 0.3s ease;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #ffffffe3;
+}
+
+.navbar.sticky .head {
+  position: relative;
+  bottom: 20px;
+}
+
+.navbar.slide-down {
+  animation: slideDown 0.6s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items > ul > li {
+  position: relative;
+  display: inline;
+  list-style: none;
+  margin: 10px;
+  padding: 0px 20px;
+  cursor: pointer;
+  top: 12px;
+}
+
+.nav-items > ul > li > a {
+  color: rgb(14, 13, 13);
+  text-decoration: none;
+  color: rgb(151, 147, 147);
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav-items > ul > li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.17rem;
+  background-color: #c52726;
+  left: 0;
+  bottom: 0;
+  transform-origin: 0% 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-items > ul > li:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-logo a,
+.nav-button a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav-logo {
+  font-size: 32px;
+}
+
+.nav-button {
+  background-color: #c52726;
+  border-radius: 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.anim-layer {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0;
+  height: 100%;
+  background-color: white;
+  transition: width 0.6s ease, left 0.6s ease;
+}
+
+.nav-button:hover .anim-layer {
+  width: 100%;
+  left: 0;
+}
+
+.nav-button:hover a {
+  color: #141214;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Dropdown styles */
+.has-dropdown .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #141214;
+  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  list-style: none;
+  text-decoration: none;
+}
+
+.has-dropdown:hover .dropdown {
+  display: flex;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  padding: 10px 32px;
+  white-space: nowrap;
+  position: relative;
+  top: 11px;
+  line-height: 20px;
+}
+
+.dropdown li :hover {
+  background-color: #c52726;
+  width: 100%;
+}
+
+/* Logo (menu icon) spacing */
+.menu-icon {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon a {
+  padding: 0 !important;
+}
+
+.nav-items ul {
+  flex-wrap: wrap;
+}
+.nav-items ul li {
+  margin-right: 5px;
+}
+
+#hamburger-menu,
+#mobile-menu {
+  display: none;
+}
+
+/*======================================== navbar================================= */
+
+/* ============================================home-page-banner================================= */
+.alps {
+  height: 140px;
+  width: 300px;
+}
+
+.hicking {
+  height: 90px;
+  width: 350px;
+}
+.mounten {
+  position: relative;
+  bottom: 100px;
+  left: 130px;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+.back-light {
+  position: relative;
+}
+
+.back-light::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Adjust how far the white fades down */
+  background: linear-gradient(to bottom, #fff, transparent);
+  pointer-events: none;
+}
+
+.view {
+  display: flex;
+  gap: 20px;
+}
+
+.view-btn a {
+  padding: 15px 30px;
+  background-color: #cdd1d1;
+  color: rgb(23, 52, 77);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.view-btn a:hover {
+  background-color: rgb(23, 52, 77);
+  color: white;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.one {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.two {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+/* ============================================home-page-banner================================= */
+
+/* ============================================tour-search======================================= */
+#tour-search {
+  padding-top: 50px;
+}
+.search-section {
+  text-align: center;
+}
+
+.search-title {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #173d6b;
+  margin-bottom: 40px;
+}
+
+.form-select option {
+  border: none;
+  border-bottom: 2px solid #173d6b;
+  color: #666;
+}
+
+.form-select:focus,
+.form-control:focus {
+  border-color: #173d6b;
+  background-color: transparent;
+}
+
+.search-btn {
+  background-color: #173d6b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  padding: 13px;
+  position: relative;
+  bottom: 8px;
+}
+
+.date-wrapper {
+  border-bottom: 2px solid #284f9e;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  position: relative;
+  top: 7px;
+}
+
+.date-label {
+  font-size: 16px;
+  color: #666;
+  font-family: "Poppins", sans-serif;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.calendar-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/747/747310.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.clear-icon {
+  width: 10px;
+  height: 10px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/1828/1828778.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  color: #002b7f;
+}
+
+.date-input-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.selected-date {
+  font-size: 16px;
+  color: #333;
+  margin-left: 5px;
+}
+/* ============================================tour-search======================================= */
+
+/* ============================================ choose======================================= */
+
+.why {
+  color: #173d6b;
+
+  font-size: 17px;
+}
+
+.why h1 {
+  color: #173d6b;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.line {
+  border-bottom: 3px solid orange;
+  width: 60px;
+}
+
+.choose-us {
+  color: #666;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  text-align: justify;
+}
+
+.learn {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #173d6b;
+}
+
+/* ============================================ choose======================================= */
+
+/* ============================================experience======================================= */
+
+.year {
+  color: #173d6b;
+  font-size: 22px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.experience {
+  color: #666;
+  font-size: 17px;
+  padding-top: 20px;
+}
+
+.year-experience {
+  padding-top: 50px;
+}
+
+/* ============================================experience  ======================================= */
+
+/* ============================================ About alps ======================================= */
+.photo img {
+  height: 600px;
+  width: 100%;
+}
+.about h1 {
+  font-size: 25px;
+  color: #173d6b;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.about-us {
+  color: #666;
+  font-size: 17px;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  text-align: justify;
+}
+/* ============================================ About alps ======================================= */
+
+/* ============================================ our popular tours ======================================= */
+.find {
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  top: 40px;
+}
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.slider-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.slider-controls button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 100%;
+}
+.stars {
+  color: orange;
+  font-size: 20px;
+  padding-left: 20px;
+}
+.card {
+  background: white;
+  flex: 1;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 300px;
+  line-height: 20px;
+}
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.offer {
+  background-color: orange;
+  width: 100px;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  left: 20px;
+  bottom: 20px;
+}
+.card h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #263047;
+}
+.day {
+  padding-left: 20px;
+  color: #666;
+}
+.cart {
+  font-size: 20px;
+  font-weight: bold;
+  color: #002b7f;
+  text-align: right;
+  padding-right: 10px;
+}
+.cart span {
+  font-size: 14px;
+}
+.review {
+  font-size: 13px;
+  color: #666;
+}
+
+.tour a {
+  text-decoration: none;
+  background-color: #242947;
+  padding: 15px 30px;
+  color: #fff;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+/* ============================================ our popular tours ======================================= */
+
+/* ============================================ number-increse ======================================= */
+
+.counter {
+  font-size: 60px;
+  font-weight: bold;
+  color: #193555;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+.counter-title {
+  font-size: 20px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.counter-p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* ============================================  number-increse ======================================= */
+
+/*=========================================== Customer Review ========================================*/
+#customer {
+  padding-top: 50px;
+}
+.review h3 {
+  color: #173d6b;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.review h4 {
+  color: #173d6b;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.under-line {
+  margin: 10px auto 0;
+  width: 60px;
+  height: 3px;
+  border-bottom: 3px solid orange;
+}
+.quote-icon {
+  font-size: 70px;
+  color: #0e5f73;
+}
+
+.customer-detail {
+  color: #666;
+  font-style: italic;
+  font-size: 15px;
+  position: relative;
+  bottom: 30px;
+}
+
+.custom {
+  position: relative;
+  left: 20px;
+}
+
+.slider-box {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.slider-box img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slider-box strong {
+  color: #666;
+  font-size: 20px;
+}
+
+.slider-box p {
+  color: #999;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.point {
+  position: initial;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
+.swiper-pagination-bullet {
+  position: relative !important;
+  border: 1px solid #3b3939;
+  border-radius: 50%;
+  top: 10px;
+}
+
+.swiper-pagination {
+  position: relative !important;
+}
+
+/*============================================================= Customer Review================================ */
+
+/*============================================================= Shop Hiking Gear ================================ */
+
+#Shop-Hiking-Gear {
+  padding-top: 50px;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.shop-header h3 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #173d6b;
+}
+
+.shop-header a {
+  text-decoration: none;
+  color: #173d6b;
+  font-weight: bold;
+}
+
+.product-card {
+  text-align: center;
+  overflow: hidden;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #050505;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.primary-view {
+  text-decoration: none;
+  background: #050505;
+  padding: 9px;
+  font-size: 16px !important;
+  color: #fff;
+}
+.primary {
+  text-decoration: none;
+  background: #2c4b91;
+  padding: 9px;
+  font-size: 16px !important;
+  color: #fff;
+}
+
+.tent {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.price {
+  color: #2c4b91;
+  font-weight: bold;
+  align-items: center;
+  font-size: 16px;
+  position: relative;
+  left: 100px;
+}
+
+/*========================================== Shop Hiking Gear ================================ */
+
+/*========================================== newletter ================================ */
+#newsletter {
+  padding-top: 50px;
+}
+.subscribe-right {
+  flex: 1;
+  background-color: #f99f1b;
+  padding: 40px;
+  height: 324px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.subscribe-right h2 {
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.subscribe-right p {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe-form input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #a05b00;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+  outline: none;
+}
+
+.subscribe-form button {
+  background-color: #1a3870;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*========================================== newletter ================================ */
+
+/*====================================== We-are-feature-in ====================================*/
+#We-are-feature-in {
+  padding-top: 50px;
+}
+.review h4 {
+  font-size: 28px;
+}
+/*====================================== We-are-feature-in ====================================*/
+
+/*======================================  photo gallary ====================================*/
+#photo-gallery {
+  padding-top: 50px;
+}
+
+.picture {
+  display: flex;
+  gap: 0px;
+}
+.gallery {
+  max-width: 276px;
+  height: 250px;
+  object-fit: cover;
+  align-items: center;
+}
+
+/*======================================  photo gallary ====================================*/
+
+/*======================================= footer ==========================================*/
+footer {
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding-bottom: 30px;
+}
+
+.contant {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+.link {
+  border-bottom: 1px solid rgb(49, 49, 49);
+}
+.list-unstyled a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 50px;
+}
+
+.footer-icon {
+  color: #f8f9fa;
+  margin: 8px;
+}
+
+.payment-icons img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.copyright {
+  background-color: #111;
+  color: #666;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #222;
+}
+/*======================================= footer ==========================================*/
+
+/*============================================= home page close============================================*/
+
+/*=============================================  template 1 ============================================*/
+#slder {
+  background-color: rgb(248, 247, 247);
+  padding: 50px;
+}
+/*============================================= tamplate1 banner ============================================*/
+.blog-title {
+  text-align: center;
+  background-color: #ffffffd8;
+  padding-top: 130px;
+  padding-bottom: 200px;
+}
+.blog-title p {
+  font-family: "Poppins", sans-serif;
+  color: grey;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.blog-title h1 {
+  font-weight: 800;
+}
+
+/*=============================================  banner ============================================*/
+
+/* ======================================search-box ===========================*/
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  background: transparent;
+}
+
+.search-box input::placeholder {
+  color: #999;
+}
+
+.search-icon {
+  font-size: 18px;
+  color: #666;
+  cursor: pointer;
+}
+
+/* Optional: Hover effect */
+.search-icon:hover {
+  color: #333;
+}
+
+/* ======================================search-box ===========================*/
+
+/* ====================================== blog-about ===========================*/
+.blog-about h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  color: #222121;
+  padding-top: 30px;
+  font-weight: 600;
+}
+
+.blog-about p {
+  font-family: "Poppins", sans-serif;
+  color: grey;
+  font-size: 16px;
+  line-height: 30px;
+  padding-top: 20px;
+}
+/* ====================================== blog-about ===========================*/
+
+/* ====================================== blog-link ===========================*/
+.blog-link h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  color: #111;
+  padding-top: 30px;
+}
+
+.blog-link ul li {
+  list-style: none;
+  border-bottom: 1px solid rgb(221, 214, 214);
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  right: 30px;
+}
+.blog-link a {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: grey;
+  font-size: 14px;
+  position: relative;
+  right: 10px;
+  padding-top: 30px;
+}
+/* ====================================== blog-link ===========================*/
+
+/*========================================= blog post ====================================*/
+.list-wrapper {
+  overflow: hidden;
+}
+
+.list-item {
+  border: 1px solid #eee;
+  background-color: #fff;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 10px 0px #eee;
+}
+
+.blog-item {
+  padding: 50px;
+}
+
+.blog-head {
+  font-family: "Oswald", sans-serif;
+  color: #2e2e30;
+  font-size: 28px;
+  padding-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blog-item p {
+  font-family: "Poppins", sans-serif;
+  color: grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.simple-pagination ul {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.simple-pagination li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.simple-pagination li a,
+.simple-pagination li span {
+  font-weight: 600;
+  color: #666;
+  padding: 3px 10px;
+  text-decoration: none;
+  border: 2px solid #818185;
+  background-color: #2c3583;
+  box-shadow: 0px 0px 10px 0px #eee;
+  border-radius: 50%;
+}
+
+.simple-pagination .current {
+  color: #fff;
+  background-color: #231d70;
+}
+
+.simple-pagination .prev.current,
+.simple-pagination .next.current {
+  background: #231d70;
+  background-color: #173d6b;
+}
+
+#pagination-container {
+  padding-left: 170px;
+}
+
+.blog-post-icon i {
+  color: grey;
+  font-size: 13px;
+  margin: 10px;
+  position: relative;
+  right: 10px;
+}
+
+.blog-post-icon span {
+  color: rgb(38, 45, 109);
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  right: 12px;
+}
+
+.more {
+  text-decoration: none;
+  background-color: #002b7f;
+  padding: 15px 30px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  top: 8px;
+}
+.blog-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+/* Zoom effect */
+.blog-img:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay effect */
+.blog-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(5, 5, 5, 0.45); /* semi-transparent dark overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.blog-img:hover::after {
+  opacity: 1;
+}
+
+/*========================================= blog post ====================================*/
+
+/*========================================= blog-text ====================================*/
+.blog-text h3 {
+  font-family: "Oswald", sans-serif;
+  color: #2e2e30;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.blog-text p {
+  font-family: "Poppins", sans-serif;
+  color: rgb(131, 124, 124);
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+/*========================================= blog-text ====================================*/
+
+/*========================================= blog-tag ====================================*/
+.blog-comment h3 {
+  font-family: "Oswald", sans-serif;
+  color: #2e2e30;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 25px;
+}
+
+.blog-tag h3 {
+  color: #2e2e30;
+  font-size: 17px;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.blog-tag span {
+  display: inline-block;
+  margin: 5px;
+}
+
+.blog-tag a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 14px;
+}
+
+.blog-tag a:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+/*========================================= blog-tag ====================================*/
+@media (max-width: 770px) {
+  .blog-tag span {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .blog-tag a {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .more {
+    padding: 5px 15px;
+  }
+  .blog-item {
+    padding: 15px;
+  }
+
+  #slder {
+    padding: 15px;
+  }
+
+  #pagination-container {
+    padding-left: 17px;
+  }
+}
+
+/*=============================================  template 1 ============================================*/
+
+/*=============================================  template 2 ============================================*/
+
+/* =============================banner====================================== */
+.bloger h1 {
+  color: #fff;
+  margin: 40px;
+  padding-top: 100px;
+}
+
+.bloger span {
+  font-weight: 300;
+}
+.bloger p {
+  color: #fff;
+  position: relative;
+  left: 50px;
+  bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+.blog-line i {
+  color: #fff;
+  margin: 13px;
+  position: relative;
+  bottom: 120px;
+  left: 130px;
+}
+
+.blog-line a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  bottom: 120px;
+  left: 130px;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-line h2 {
+  color: white;
+  position: relative;
+  bottom: 115px;
+  left: 140px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+}
+
+/* =============================banner====================================== */
+
+/* ============================= blog page ====================================== */
+#tamp-details {
+  padding: 60px;
+  line-height: 1.7;
+}
+
+.detail p {
+  color: #727272;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.detail h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+.summery p {
+  background-color: rgb(233, 224, 224);
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  border-left: 2px solid rgb(201, 194, 194);
+}
+
+.detail ul li {
+  color: #727272;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.new {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  border: 1px solid grey;
+  padding: 5px 20px;
+}
+/* =============================paragraph====================================== */
+
+/* ============================= author profile====================================== */
+.author {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.icon-line {
+  border-bottom: 1px solid grey;
+  position: relative;
+  top: 80px;
+  z-index: -1;
+}
+
+.persos i {
+  font-size: 100px;
+  color: rgb(161, 150, 150);
+  font-weight: 400;
+  background-color: white;
+  border-radius: 50%;
+}
+.blog-follow {
+  margin-inline: 20px;
+}
+
+.blog-follow strong {
+  font-size: 30px;
+}
+.blog-follow span {
+  color: rgb(36, 34, 34);
+  font-size: 20px;
+  margin: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.blog-follow i {
+  font-size: 16px;
+  margin: 10px;
+  color: rgb(26, 24, 24);
+}
+
+.persos p {
+  color: rgb(161, 150, 150);
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-author {
+  color: rgb(161, 150, 150);
+  font-family: "Poppins", sans-serif;
+}
+
+.uper-line {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 40px;
+}
+/* ============================= author profile====================================== */
+
+.blog-prev {
+  float: left;
+  color: #e1e1e1;
+  font-size: 15px;
+  position: relative;
+  top: 30px;
+}
+
+.blog-next {
+  float: right;
+  color: #e1e1e1;
+  font-size: 15px;
+  position: relative;
+  top: 30px;
+}
+
+/* ============================= Leave reply====================================== */
+.blog-from {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #f9f9f9;
+  margin-top: 20px;
+}
+.comment-form {
+  padding: 60px;
+}
+
+.comment-form h2 {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #312e2e;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "Oswald", sans-serif;
+}
+
+.comment-form textarea,
+.comment-form input[type="text"],
+.comment-form input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.group-input {
+  display: flex;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.comment-form label {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(146, 143, 143);
+}
+
+.comment-form button {
+  display: block;
+  width: 160px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #3a5372;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.comment-form button:hover {
+  background-color: #04172a;
+}
+
+/* ===================================== tour search =======================================*/
+
+/* ==================================== paragraph =======================================*/
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+
+.overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* black overlay */
+  color: white;
+  padding: 30px;
+}
+
+.overlay-box h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+.overlay-box p {
+  font-size: 16px;
+  text-align: justify;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+/*=================================== paragraph =======================================*/
+
+/*=================================== blog side bar =======================================*/
+.blog-side h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #111;
+}
+.blog-side {
+  list-style: none;
+  margin-top: 26px;
+  margin-left: 40px;
+}
+
+.blog-side li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+  border-bottom: 2px solid #ccc;
+  padding: 10px 0;
+}
+.heartbeat-dot {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(250, 42, 5);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(250, 42, 5);
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgb(223, 37, 4);
+  }
+  25% {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px rgb(223, 37, 4);
+  }
+  40% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgb(223, 37, 4);
+  }
+  60% {
+    transform: scale(1.3);
+    box-shadow: 0 0 20px rgb(223, 37, 4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgb(223, 37, 4);
+  }
+}
+
+.blog-side li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.blog-side li a:hover {
+  color: red;
+}
+
+.tag-line {
+  border-bottom: 3px solid darkcyan;
+  width: 100px;
+}
+/*=================================== blog side bar =======================================*/
+
+/*=================================== blog box =======================================*/
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog-box-side {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+.blog-box {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+.honeymoon-box {
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.honeymoon-image {
+  position: relative;
+  height: 270px;
+  overflow: hidden;
+}
+
+.honeymoon-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.honeymoon-image p {
+  font-family: Tahoma, Geneva, sans-serif !important;
+  text-align: justify;
+  line-height: 1.2;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  font-size: 12px;
+  color: white;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+.honeymoon-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.honeymoon-box:hover .honeymoon-image img {
+  transform: scale(1.1);
+}
+
+.honeymoon-box:hover .honeymoon-image::after {
+  opacity: 1;
+}
+
+.honeymoon-box:hover .honeymoon-image p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.honeymoon-text {
+  padding: 16px 20px;
+}
+
+.honeymoon-text h2 {
+  color: #0c0c0c;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.honeymoon-text h2:hover {
+  color: darkcyan;
+}
+
+.honeymoon-text span {
+  color: #007bff;
+  padding-left: 0px;
+  font-size: 14px;
+}
+
+.honeymoon-text span:hover {
+  color: darkcyan;
+  font-size: 14px;
+}
+/*=================================== blog box =======================================*/
+
+.category-box {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  font-family: sans-serif;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.category h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #111;
+  width: 100%;
+  text-align: center;
+}
+
+.category-blog img {
+  border-radius: 10px;
+  height: 60px !important;
+  width: 90px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.05);
+}
+
+.category-blog a {
+  text-decoration: none;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 5px;
+  line-height: 17px;
+}
+
+@media only screen and (max-width: 992px) {
+  .image-container img {
+    width: 100%;
+    display: block;
+    height: 650px;
+    object-fit: cover;
+  }
+  .honeymoon-box {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  .honeymoon-box {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+}
+
+/* ===================================== tour search =======================================*/
+
+/* ===================================== Leave reply ====================================== */
+@media (max-width: 770px) {
+  .bloger h1 {
+    color: #fff;
+    margin: 10px;
+    padding-top: 100px;
+  }
+  .bloger p {
+    display: none;
+  }
+  .blog-line i {
+    color: #fff;
+    margin: 13px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .blog-line a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .blog-line h2 {
+    color: white;
+    position: relative;
+    bottom: 0px;
+    left: 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 34px;
+  }
+
+  #tamp-details {
+    padding: 25px;
+  }
+
+  .comment-form {
+    padding: 20px;
+  }
+
+  .comment-form textarea,
+  .comment-form input[type="text"],
+  .comment-form input[type="email"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .comment-form label {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(146, 143, 143);
+  }
+
+  .blog-follow {
+    margin-inline: 0px;
+  }
+
+  .persos i {
+    font-size: 75px;
+    color: rgb(161, 150, 150);
+    font-weight: 400;
+    background-color: white;
+    border-radius: 50%;
+  }
+}
+/*=============================================  template 2 ============================================*/
+
+/*======================================== header and navbar ================================= */
+
+@media only screen and (max-width: 770px) {
+  .display {
+    display: block;
+  }
+  .phone {
+    display: none;
+  }
+  .fluid {
+    margin: 5px;
+  }
+  .follow i {
+    margin: 0px;
+  }
+  .follow a {
+    padding: 9px;
+  }
+
+  .dropdown li a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 10px 20px;
+    white-space: nowrap;
+    position: relative;
+    top: 10px;
+    right: 20px;
+  }
+
+  #mobile-menu {
+    background-color: #050505f3;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    z-index: 9999;
+  }
+
+  .mobile-nav-items > ul {
+    padding: 0px;
+  }
+
+  .mobile-nav-items > ul > li {
+    text-align: center;
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .mobile-nav-items > ul > li > a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .mobile-nav-items > ul > li::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.17rem;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transform-origin: 0% 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-nav-items > ul > li:hover::after {
+    transform: scaleX(1);
+  }
+
+  .mobile-nav-button {
+    background-color: #242947;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .mobile-nav-button .anim-layer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .mobile-nav-button:hover .anim-layer {
+    width: 100%;
+    left: 0;
+  }
+
+  .mobile-nav-button:hover a {
+    color: #141214;
+  }
+
+  .mobile-nav-button a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-items > ul,
+  .nav-button {
+    display: none;
+  }
+
+  #hamburger-cross {
+    display: block;
+    color: rgb(244, 245, 250);
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 26px;
+  }
+
+  #hamburger-menu {
+    display: block;
+    color: rgb(37, 48, 71);
+    cursor: pointer;
+    font-size: 24px;
+  }
+}
+
+/*======================================== header and navbar================================= */
+
+/*========================================  banner ================================= */
+@media only screen and (max-width: 770px) {
+  .hicking {
+    height: 40px;
+    width: 100%;
+  }
+  .alps {
+    height: 60px;
+    width: 100%;
+  }
+
+  /* ============================================ About alps ======================================= */
+
+  .about {
+    color: #173d6b;
+    font-weight: 400;
+    margin: 20px;
+  }
+  /* ============================================ About alps ======================================= */
+
+  .card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .card {
+    background: white;
+    flex: 1;
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .slide {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    min-width: 100%;
+  }
+  .stars {
+    color: orange;
+    font-size: 13px;
+    padding-left: 5px;
+  }
+  .card h3 {
+    font-size: 7px;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  .day {
+    font-size: 10px;
+    padding-left: 5px;
+  }
+  .review {
+    font-size: 10px;
+  }
+
+  .cart span {
+    font-size: 10px;
+  }
+
+  .cart {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .offer {
+    background-color: orange;
+    width: 60px;
+    padding: 5px;
+    color: #fff;
+    font-size: 10px;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
+  }
+  .find {
+    font-size: 20px;
+  }
+
+  .gallery {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .picture {
+    display: block;
+    gap: 0px;
+  }
+
+  .photo img {
+    display: none;
+  }
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .search-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe-section {
+    flex-direction: column;
+  }
+
+  .blog-two {
+    order: 1;
+  }
+
+  .blog-one {
+    order: 2;
+    padding-top: 20px;
+  }
+
+  .blog-three {
+    order: 3;
+  }
+}
+
+#tour-search form select:focus {
+  box-shadow: none !important;
+}

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Pagination Plugin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/simplePagination.css" />
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.6/jquery.simplePagination.min.js"></script>
+    <title>New Thema</title>
+</head>
+
+
+<body style="overflow-x: hidden;">
+    <!--------------------- header / css-line=20--144 -------------------->
+    <header>
+        <div class="fluid">
+            <div class="row ">
+                <div class="col-sm-6">
+                    <div class="phone">
+                        <i class="bi bi-telephone-fill"></i> <a href="+91 7898765561"> +91 7898765561</a>
+                        <i class="bi bi-envelope"></i> <a href="info@newthema.com"> info@newthema.com</a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="follow">
+                        <a href=""><i class="bi bi-person-fill"> Sign up</i></a>
+                        <a href=""><i class="bi bi-lock"> Login</i></a>
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href=""><i class="bi bi-chat-left-dots-fill"></i></a>
+                        <a href=""><i class="bi bi-facebook"></i></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------------- header / css-line=20--144 -------------------->
+
+
+        <!--------------------- navbar / css-line=20--144 -------------------->
+        <div class="row">
+            <div class="col-md-12 container">
+                <div class="navbar" id="navbar">
+                    <div class="nav-logo">
+                        <a href="#"> <img class="display" src="image/logo.png" height="50"> </a>
+                    </div>
+                    <div class="nav-items">
+                        <ul>
+                            <li><a href="index.html"> Home </a></li>
+                            <li><a href="toursearch.html"> Tour List </a></li>
+                            <li class="has-dropdown">
+                                <a href="#"> Tour Search </a>
+                                <ul class="dropdown">
+                                    <li><a href="template1.html">Template 1 </a></li>
+                                    <li><a href="template2.html">Template 2 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> <img class="head" src="image/logo.png" height="50"> </a></li>
+                            <li><a href="#"> Destinations </a></li>
+                            <li><a href="#"> Contact </a></li>
+                            <li><a href="#"> Blog </a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-button">
+
+                    </div>
+                    <div id="hamburger-menu">&#9776;</div>
+                </div>
+
+                <div id="mobile-menu">
+                    <div class="mobile-nav-items">
+                        <ul>
+                            <li><a href="index.html"> Home </a></li>
+                            <li><a href="#"> Tour List </a></li>
+                            <li class="has-dropdown">
+                                <a href="toursearch.html"> Tour Search </a>
+                                <ul class="dropdown">
+                                    <li><a href="template1.html">Template 1 </a></li>
+                                    <li><a href="template2.html">Template 2 </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"> Destinations </a></li>
+                            <li><a href="#"> Contact </a></li>
+                            <li><a href="#"> Blog </a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-nav-button">
+                        <div class="anim-layer"></div>
+                        <a href="#">Sign Up</a>
+                    </div>
+                    <div id="hamburger-cross">&#10006;</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--------------------- Navber / css-line=20--144 -------------------->
+
+    <!---------------------------- banner css-line=1018--135 ------------------------>
+    <section id="banner">
+        <div class="row">
+            <div class="col-md-12"
+                style="background-image: url(image/hiking-slider.jpg); background-repeat: no-repeat;   background-size: 100% 400px;">
+                <div class="blog-title">
+                    <h1>Blog Full Both Sidebar With Frame</h1>
+                    <p>Caption align here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------- banner css-line=1018--1035 ------------------------->
+
+    <!---------------------   css-line=1037--1073 -------------------->
+    <section id="slder">
+        <div class="row ">
+            <!--------------------- search css-line=1037--1073 -------------------->
+            <div class="col-md-3 blog-one">
+                <div class="search-box">
+                    <input type="text" placeholder="Search ..." id="searchInput">
+                    <span class="search-icon" onclick="searchFunction()"><i class="bi bi-search"></i></span>
+                </div>
+                <!--------------------- search css-line=1037--1073 -------------------->
+
+                <!--------------------- about css-line=1075--1091 -------------------->
+                <div class="blog-about">
+                    <h2>ABOUT US</h2>
+                    <p>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue.
+                        Nulla
+                        vitae
+                        elit libero, a pharetra augue. Donec sed odio dui.</p>
+                </div>
+                <!--------------------- about css-line=1075--1091 -------------------->
+
+
+                <!--------------------- RECENT POSTS css-line=1093--1118 -------------------->
+                <div class="blog-link">
+                    <h2>RECENT POSTS</h2>
+                    <ul>
+                        <li><a href="">How to travel with paper map</a></li>
+                        <li> <a href="">Introducing this amazing city</a></li>
+                        <li><a href="">Change your place and get the fresh air</a></li>
+                        <li><a href="">Pityful a rethoric question ran</a></li>
+                        <li> <a href="">Even the all-powerful Pointing</a></li>
+                    </ul>
+                </div>
+                <!--------------------- RECENT POSTS css-line=1093-1118 -------------------->
+
+                <!--------------------- slider css-line -------------------->
+                <style>
+                    .slider-box {
+                        width: 100%;
+                        height: auto;
+                        padding: 0px;
+                        margin: auto;
+                        background: none;
+                    }
+
+                    .slider-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: bold;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                    }
+
+                    .slider-header span {
+                        font-size: 20px;
+                        cursor: pointer;
+                        padding: 0 7px;
+                    }
+
+                    .slider-container {
+                        overflow: hidden;
+                        position: relative;
+                    }
+
+                    .slider-track {
+                        display: flex;
+                        transition: transform 0.5s ease-in-out;
+                    }
+
+                    .slider-item {
+                        width: 100%;
+                        flex-shrink: 0;
+                    }
+
+                    .slider-item img {
+                        width: 100%;
+                        display: block;
+                        border-radius: 0%;
+                    }
+
+                    .slider-item img:hover {
+                        overflow: hidden;
+                        background-color: #2e2e3091;
+                    }
+
+                    .blog-works {
+                        color: #2e2e30;
+                        font-size: 17px;
+                        font-weight: bold;
+                        font-family: "Oswald", sans-serif;
+                    }
+
+                    .slider-item {
+                        position: relative;
+                        width: 100%;
+                        flex-shrink: 0;
+                        overflow: hidden;
+                        top: 30px;
+                    }
+
+                    .slider-item img {
+                        width: 100%;
+                        height: 200px;
+                        display: block;
+                        border-radius: 0;
+                        transition: transform 0.3s ease;
+                    }
+
+                    /* Overlay background */
+                    .slider-item .hover-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        width: 100%;
+                        background: rgba(0, 0, 0, 0.562);
+                        /* dark transparent overlay */
+                        opacity: 0;
+                        text-align: center;
+                        transition: opacity 0.3s ease;
+                        margin: 0 auto;
+                    }
+
+                    /* Search icon */
+                    .slider-item .hover-overlay i {
+                        color: #fff;
+                        font-size: 18px;
+                        position: relative;
+                        bottom: 30px;
+
+                    }
+
+                    .slider-item .hover-overlay a {
+                        color: #fff;
+                        font-size: 15px;
+                        font-weight: 700;
+                        font-style: normal;
+                        text-decoration: none;
+                        position: relative;
+                        top: 60px;
+                        overflow: auto;
+                    }
+
+                    .arrows {
+                        font-size: 12px;
+                    }
+
+                    /* Show overlay on hover */
+                    .slider-item:hover .hover-overlay {
+                        opacity: 1;
+                    }
+                </style>
+
+
+                <div class="slider-box">
+                    <div class="slider-header">
+                        <div class="blog-works">RECENT WORKS</div>
+                        <div class="arrows">
+                            <span id="prev">&#10094;</span>
+                            <span id="next">&#10095;</span>
+                        </div>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-track" id="sliderTrack">
+                            <div class="slider-item">
+                                <img src="image/img25.jpg" alt="Image 1" height="200" width="100%">
+                                <div class="hover-overlay">
+                                    <a href=""><i class="bi bi-search"></i></a>
+                                    <a href="">
+                                        <p>Fusce Pelleque Conse</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <img src="image/img26.jpg" alt="Image 1" height="200" width="100%">
+                                <div class="hover-overlay">
+                                    <a href=""><i class="bi bi-search"></i></a>
+                                    <a href="">
+                                        <p>Fusce Pelleque Conse</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <img src="image/img27.jpg" alt="Image 1" height="200" width="100%">
+                                <div class="hover-overlay">
+                                    <a href=""><i class="bi bi-search"></i></a>
+                                    <a href="">
+                                        <p>Fusce Pelleque Conse</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <img src="image/img28.jpg" alt="Image 1" height="200" width="100%">
+                                <div class="hover-overlay">
+                                    <a href=""><i class="bi bi-search"></i></a>
+                                    <a href="">
+                                        <p>Fusce Pelleque Conse</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="slider-item">
+                                <img src="image/img29.jpg" alt="Image 1" height="200" width="100%">
+                                <div class="hover-overlay">
+                                    <a href=""><i class="bi bi-search"></i></a>
+                                    <a href="">
+                                        <p>Fusce Pelleque Conse</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const track = document.getElementById("sliderTrack");
+                        const items = track.querySelectorAll(".slider-item");
+                        let slideIndex = 0;
+
+                        function updateSlider() {
+                            const itemWidth = items[0].offsetWidth;
+                            track.style.transform = `translateX(-${slideIndex * itemWidth}px)`;
+                        }
+
+                        function nextSlide() {
+                            slideIndex = (slideIndex + 1) % items.length;
+                            updateSlider();
+                        }
+
+                        function prevSlide() {
+                            slideIndex = (slideIndex - 1 + items.length) % items.length;
+                            updateSlider();
+                        }
+
+                        document.getElementById("next").addEventListener("click", nextSlide);
+                        document.getElementById("prev").addEventListener("click", prevSlide);
+
+                        setInterval(nextSlide, 3000);
+
+                        window.addEventListener("resize", updateSlider);
+
+                        updateSlider(); // Initial call
+                    });
+
+                </script>
+
+            </div>
+            <!--------------------- slider css-line -------------------->
+
+
+            <!--------------------- blog post css-line=1120=1254 -------------------->
+            <div class="col-md-6 blog-two">
+                <div class="list-wrapper">
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img25.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img26.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img27.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img28.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img29.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img25.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img27.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img29.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img26.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img25.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img27.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img28.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""> <img src="image/img26.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""> <img src="image/img27.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img29.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img25.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""><img src="image/img28.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""> <img src="image/img26.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="blog-img">
+                            <a href=""> <img src="image/img29.jpg" height="auto" width="100%"></a>
+                        </div>
+                        <div class="blog-item">
+                            <div class="blog-post-icon">
+                                <i class="bi bi-clock"></i><span>June 6, 2016</span><i
+                                    class="bi bi-file-text"></i><span>James Doe</span>
+                            </div>
+                            <a href="" class="blog-head">How to travel with paper map</a>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of
+                                spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in
+                                this spot, which was created for the bliss of souls like mine....</p>
+
+                            <a href="" class="more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pagination-container"></div>
+                <script>
+                    $(document).ready(function () {
+                        var items = $(".list-wrapper .list-item");
+                        var numItems = items.length;
+                        var perPage = 4;
+
+                        // Initially hide all items beyond first page
+                        items.slice(perPage).hide();
+
+                        // Initialize pagination
+                        $("#pagination-container").pagination({
+                            items: numItems,
+                            itemsOnPage: perPage,
+                            prevText: "&laquo;",
+                            nextText: "&raquo;",
+                            onPageClick: function (pageNumber) {
+                                var showFrom = perPage * (pageNumber - 1);
+                                var showTo = showFrom + perPage;
+                                items.hide().slice(showFrom, showTo).show();
+                            },
+                        });
+                    });
+                </script>
+            </div>
+            <!--------------------- blog post css-line=1120=1254 -------------------->
+
+            <!--------------------- TEXT WIDGET css-line=1257--1269 -------------------->
+            <div class="col-md-3 blog-three">
+                <div class="blog-text">
+                    <h3>TEXT WIDGET</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue. Nulla vitae elit libero, a pharetra augue. Nulla vitae
+                        elit libero, a pharetra augue. Donec sed odio dui. Etiam porta sem malesuada.</p>
+                </div>
+                <!--------------------- TEXT WIDGET css-line=1257--1269 -------------------->
+
+
+                <!--------------------- recent comment css-line=1273-1312 -------------------->
+                <div class="blog-comment">
+                    <h3>RECENT COMMENT</h3>
+                    <p></p>
+                </div>
+                <div class="blog-tag">
+                    <h3>TAG CLOUD</h3>
+                    <span><a href="">Article</a></span>
+                    <span><a href="">Building</a></span>
+                    <span><a href="">Constractrion</a></span>
+                    <span><a href="">Indusrty</a></span>
+                    <span><a href="">Metal</a></span>
+                    <span><a href="">Mining</a></span>
+                    <span><a href="">Nature</a></span>
+                    <span><a href="">News</a></span>
+                    <span><a href="">Oil</a></span>
+                    <span><a href="">Polymer</a></span>
+                </div>
+            </div>
+        </div>
+        <!--------------------- recent comment css-line =1273-1312-------------------->
+
+    </section>
+    <footer>
+        <div class="container mt-5">
+            <div class="row ">
+                <!-- Contact Info -->
+                <div class="col-md-3">
+                    <h5 class="contant">Contact Info</h5>
+                    <p><span class="text-info">London</span> <i class="fa fa-phone footer-icon"> + 6-345-3456-233</i>
+                    </p>
+                    <p><span class="text-info">Hawaii</span> <i class="fa fa-phone footer-icon"> + 1-345-33454-4</i>
+                    </p>
+                    <p><span class="text-info">Greece</span> <i class="fa fa-phone footer-icon"> + 34-8757-4556</i>
+                    </p>
+                    <p><i class="fa fa-envelope footer-icon"></i> Ask@traveltourtheme.com</p>
+                    <p class="mt-3">© 2025 Travel Tour<br>All Rights Reserved.</p>
+                </div>
+
+                <!-- About Us -->
+                <div class="col-md-3">
+                    <h5 class="contant">About Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Story</a></li>
+                        <div class="link"></div>
+                        <li><a href="#">Travel Blog & Tips</a></li>
+                        <div class="link"></div>
+                        <li><a href="#">Working With Us</a></li>
+                        <div class="link"></div>
+                        <li><a href="#">Be Our Partner</a></li>
+                        <div class="link"></div>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-md-3">
+                    <h5 class="contant">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Customer Support</a></li>
+                        <div class="link"></div>
+                        <li><a href="#">Privacy & Policy</a></li>
+                        <div class="link"></div>
+                        <li><a href="#">Contact Channels</a></li>
+                        <div class="link"></div>
+                    </ul>
+                </div>
+
+                <!-- Payment Info -->
+                <div class="col-md-3">
+                    <h5 class="contant">Pay Safely With Us</h5>
+                    <p>The payment is encrypted and<br>transmitted securely with an SSL protocol.</p>
+                    <div class="payment-icons">
+                        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa">
+                        <img src="https://img.icons8.com/color/48/mastercard-logo.png" alt="MasterCard">
+                        <img src="https://img.icons8.com/color/48/amex.png" alt="Amex">
+                        <img src="https://img.icons8.com/color/48/discover.png" alt="Discover">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<script src="page.js"></script>
+
+
+</html>
